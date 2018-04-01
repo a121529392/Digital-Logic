@@ -1,0 +1,43 @@
+/*module top( S, C_out, x, y,C_in) ;
+
+ input x, y, C_in;
+ output S, C_out;
+ wire s1,s2,s3;
+ 
+ assign s1=x^y;
+ assign S=s1^C_in;
+ assign s2=x&y;
+ assign s3=s1&C_in;
+ assign C_out=s2|s3;
+
+endmodule*/ 
+
+module adder(sum, in_a,in_b,C_out) ;
+
+ input [2:0]in_a;
+ input [2:0]in_b;
+ output [3:0]sum;
+ output [1:0]C_out;
+ wire [2:0]c1;
+ wire [2:0]c2;
+ wire[2:0]c3;
+ 
+ assign c1[0]=in_a[0]^in_b[0];
+ assign sum[0]=c1[0]^0;
+ assign c2[0]=in_a[0]&in_b[0];
+ assign c3[0]=c1[0]&0;
+ assign C_out[0]=c2[0]|c3[0];
+ 
+ assign c1[1]=in_a[1]^in_b[1];
+ assign sum[1]=c1[1]^C_out[0];
+ assign c2[1]=in_a[1]&in_b[1];
+ assign c3[1]=c1[1]&C_out[0];
+ assign C_out[1]=c2[1]|c3[1];
+ 
+ assign c1[2]=in_a[2]^in_b[2];
+ assign sum[2]=c1[2]^C_out[1];
+ assign c2[2]=in_a[2]&in_b[2];
+ assign c3[2]=c1[2]&C_out[1];
+ assign sum[3]=c2[2]|c3[2];
+
+endmodule 

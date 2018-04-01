@@ -1,0 +1,104 @@
+Quartus II
+Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition
+10
+767
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+altsyn.lmf
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+s1031449fulladder
+# storage
+db|s1031449fulladder.(0).cnf
+db|s1031449fulladder.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+s1031449fulladder.v
+ece1e417da4e12f447b31b86864d4b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|91sp1|quartus|lmf|altsyn.lmf
+bbbb84af4e7019201bb1fc50d2957c
+# macro_sequence
+
+# end
+# entity
+top
+# storage
+db|s1031449fulladder.(1).cnf
+db|s1031449fulladder.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+s1031449fulladder.v
+ece1e417da4e12f447b31b86864d4b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+top:mod
+top:mod1
+top:mod2
+top:mod3
+}
+# lmf
+c:|altera|91sp1|quartus|lmf|altsyn.lmf
+bbbb84af4e7019201bb1fc50d2957c
+# macro_sequence
+
+# end
+# complete
+

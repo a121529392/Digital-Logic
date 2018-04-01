@@ -1,0 +1,19 @@
+
+module top (A , B, Cin, Sum,Cout);
+
+input A,B,Cin;
+output Sum,Cout;
+assign Sum =Cin^(A^B);
+assign Cout=Cin&(A^B)+A&B;
+
+endmodule 
+module s1031449fulladder(a, b, c, d,e,c1,c2,c3,d1,d2,d3);
+input a, b,e;
+output c, d,c1,c2,c3,d1,d2,d3;
+top mod(a, b,e, c, d);
+top mod1(a, b,d, c1, d1);
+top mod2(a, b,d1, c2, d2);
+top mod3(a, b,d2, c3, d3);
+endmodule
+
+

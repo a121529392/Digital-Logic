@@ -1,0 +1,114 @@
+|exercise
+rst => rst.IN1
+hold => hold.IN1
+clk => clk.IN1
+seg_out[0] <= display:mod3.port2
+seg_out[1] <= display:mod3.port2
+seg_out[2] <= display:mod3.port2
+seg_out[3] <= display:mod3.port2
+seg_out[4] <= display:mod3.port2
+seg_out[5] <= display:mod3.port2
+seg_out[6] <= display:mod3.port2
+seg_out[7] <= display:mod3.port2
+seg_out1[0] <= display:mod3.port3
+seg_out1[1] <= display:mod3.port3
+seg_out1[2] <= display:mod3.port3
+seg_out1[3] <= display:mod3.port3
+seg_out1[4] <= display:mod3.port3
+seg_out1[5] <= display:mod3.port3
+seg_out1[6] <= display:mod3.port3
+seg_out1[7] <= display:mod3.port3
+count <= count.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|exercise|clock_divider:mod
+clk => divide_clk~reg0.CLK
+clk => num[0].CLK
+clk => num[1].CLK
+clk => num[2].CLK
+clk => num[3].CLK
+clk => num[4].CLK
+clk => num[5].CLK
+clk => num[6].CLK
+clk => num[7].CLK
+clk => num[8].CLK
+clk => num[9].CLK
+clk => num[10].CLK
+clk => num[11].CLK
+clk => num[12].CLK
+clk => num[13].CLK
+clk => num[14].CLK
+clk => num[15].CLK
+clk => num[16].CLK
+clk => num[17].CLK
+clk => num[18].CLK
+clk => num[19].CLK
+clk => num[20].CLK
+clk => num[21].CLK
+clk => num[22].CLK
+clk => num[23].CLK
+clk => num[24].CLK
+clk => num[25].CLK
+divide_clk <= divide_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|exercise|ppcounter:mod1
+divide_clk => count[0]~reg0.CLK
+divide_clk => count[1]~reg0.CLK
+divide_clk => count[2]~reg0.CLK
+divide_clk => count[3]~reg0.CLK
+divide_clk => count[4]~reg0.CLK
+divide_clk => count[5]~reg0.CLK
+divide_clk => count[6]~reg0.CLK
+divide_clk => a.CLK
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
+hold => count.OUTPUTSELECT
+hold => count.OUTPUTSELECT
+hold => count.OUTPUTSELECT
+hold => count.OUTPUTSELECT
+hold => count.OUTPUTSELECT
+hold => count.OUTPUTSELECT
+hold => count.OUTPUTSELECT
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= count[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= count[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= count[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|exercise|bin_to_dec:mod2
+ten <= Div0.DB_MAX_OUTPUT_PORT_TYPE
+one <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+count => Div0.IN4
+count => Mod0.IN4
+
+
+|exercise|display:mod3
+ten => Decoder0.IN0
+one => Decoder1.IN0
+seg_out[0] <= <VCC>
+seg_out[1] <= <VCC>
+seg_out[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[5] <= <GND>
+seg_out[6] <= <GND>
+seg_out[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+seg_out1[0] <= <VCC>
+seg_out1[1] <= <VCC>
+seg_out1[2] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+seg_out1[3] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+seg_out1[4] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+seg_out1[5] <= <GND>
+seg_out1[6] <= <GND>
+seg_out1[7] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+
+

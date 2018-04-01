@@ -1,0 +1,238 @@
+|number
+A[0] <= A[0].DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A[1].DB_MAX_OUTPUT_PORT_TYPE
+B[0] <= B[0].DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B[1].DB_MAX_OUTPUT_PORT_TYPE
+in_a[0] => in_a[0].IN2
+in_a[1] => in_a[1].IN2
+in_a[2] => in_a[2].IN2
+in_a[3] => in_a[3].IN2
+in_b[0] => in_b[0].IN2
+in_b[1] => in_b[1].IN2
+in_b[2] => in_b[2].IN2
+in_b[3] => in_b[3].IN2
+seg[0] <= display1:two.port0
+seg[1] <= display1:two.port0
+seg[2] <= display1:two.port0
+seg[3] <= display1:two.port0
+seg[4] <= display1:two.port0
+seg[5] <= display1:two.port0
+seg[6] <= display1:two.port0
+seg[7] <= display1:two.port0
+seg[8] <= display1:three.port0
+seg[9] <= display1:three.port0
+seg[10] <= display1:three.port0
+seg[11] <= display1:three.port0
+seg[12] <= display1:three.port0
+seg[13] <= display1:three.port0
+seg[14] <= display1:three.port0
+seg[15] <= display1:three.port0
+seg[16] <= display:twothree.port0
+seg[17] <= display:twothree.port0
+seg[18] <= display:twothree.port0
+seg[19] <= display:twothree.port0
+seg[20] <= display:twothree.port0
+seg[21] <= display:twothree.port0
+seg[22] <= display:twothree.port0
+seg[23] <= display:twothree.port0
+seg[24] <= display:threeone.port0
+seg[25] <= display:threeone.port0
+seg[26] <= display:threeone.port0
+seg[27] <= display:threeone.port0
+seg[28] <= display:threeone.port0
+seg[29] <= display:threeone.port0
+seg[30] <= display:threeone.port0
+seg[31] <= display:threeone.port0
+sure => sure.IN1
+clk => clk.IN1
+enable => enable.IN1
+rst => rst.IN1
+dec <= <GND>
+
+
+|number|LFSR:s3
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => out[0]~reg0.CLK
+clk => out[1]~reg0.CLK
+clk => out[2]~reg0.CLK
+clk => out[3]~reg0.CLK
+clk => out[4]~reg0.CLK
+clk => out[5]~reg0.CLK
+clk => out[6]~reg0.CLK
+clk => out[7]~reg0.CLK
+enable => out.OUTPUTSELECT
+enable => out.OUTPUTSELECT
+enable => out.OUTPUTSELECT
+enable => out.OUTPUTSELECT
+enable => out.OUTPUTSELECT
+enable => out.OUTPUTSELECT
+enable => out.OUTPUTSELECT
+enable => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+rst => out.OUTPUTSELECT
+
+
+|number|bin_to_dec1:w
+dec[0] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+dec[1] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+dec[2] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+dec[3] <= Mod0.DB_MAX_OUTPUT_PORT_TYPE
+dec[4] <= dec[4].DB_MAX_OUTPUT_PORT_TYPE
+dec[5] <= dec.DB_MAX_OUTPUT_PORT_TYPE
+dec[6] <= dec.DB_MAX_OUTPUT_PORT_TYPE
+dec[7] <= dec.DB_MAX_OUTPUT_PORT_TYPE
+bin[0] => Div0.IN14
+bin[0] => Div1.IN11
+bin[0] => Mod0.IN11
+bin[1] => Div0.IN13
+bin[1] => Div1.IN10
+bin[1] => Mod0.IN10
+bin[2] => Div0.IN12
+bin[2] => Div1.IN9
+bin[2] => Mod0.IN9
+bin[3] => Div0.IN11
+bin[3] => Div1.IN8
+bin[3] => Mod0.IN8
+bin[4] => Div0.IN10
+bin[4] => Div1.IN7
+bin[4] => Mod0.IN7
+bin[5] => Div0.IN9
+bin[5] => Div1.IN6
+bin[5] => Mod0.IN6
+bin[6] => Div0.IN8
+bin[6] => Div1.IN5
+bin[6] => Mod0.IN5
+bin[7] => Div0.IN7
+bin[7] => Div1.IN4
+bin[7] => Mod0.IN4
+
+
+|number|display:threeone
+print[0] <= <VCC>
+print[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+print[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+print[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+print[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+print[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+print[6] <= print.DB_MAX_OUTPUT_PORT_TYPE
+print[7] <= print.DB_MAX_OUTPUT_PORT_TYPE
+inte[0] => Decoder0.IN3
+inte[1] => Decoder0.IN2
+inte[2] => Decoder0.IN1
+inte[3] => Decoder0.IN0
+
+
+|number|display:twothree
+print[0] <= <VCC>
+print[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+print[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+print[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+print[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+print[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+print[6] <= print.DB_MAX_OUTPUT_PORT_TYPE
+print[7] <= print.DB_MAX_OUTPUT_PORT_TYPE
+inte[0] => Decoder0.IN3
+inte[1] => Decoder0.IN2
+inte[2] => Decoder0.IN1
+inte[3] => Decoder0.IN0
+
+
+|number|answer:comb_3
+A[0] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A.DB_MAX_OUTPUT_PORT_TYPE
+B[0] <= B.DB_MAX_OUTPUT_PORT_TYPE
+B[1] <= B.DB_MAX_OUTPUT_PORT_TYPE
+sure => ~NO_FANOUT~
+in_a[0] => Equal0.IN3
+in_a[0] => Equal1.IN3
+in_a[0] => Equal2.IN3
+in_a[1] => Equal0.IN2
+in_a[1] => Equal1.IN2
+in_a[1] => Equal2.IN2
+in_a[2] => Equal0.IN1
+in_a[2] => Equal1.IN1
+in_a[2] => Equal2.IN1
+in_a[3] => Equal0.IN0
+in_a[3] => Equal1.IN0
+in_a[3] => Equal2.IN0
+in_b[0] => Equal0.IN7
+in_b[0] => Equal3.IN3
+in_b[0] => Equal4.IN3
+in_b[1] => Equal0.IN6
+in_b[1] => Equal3.IN2
+in_b[1] => Equal4.IN2
+in_b[2] => Equal0.IN5
+in_b[2] => Equal3.IN1
+in_b[2] => Equal4.IN1
+in_b[3] => Equal0.IN4
+in_b[3] => Equal3.IN0
+in_b[3] => Equal4.IN0
+dec[0] => Equal1.IN7
+dec[0] => Equal4.IN7
+dec[1] => Equal1.IN6
+dec[1] => Equal4.IN6
+dec[2] => Equal1.IN5
+dec[2] => Equal4.IN5
+dec[3] => Equal1.IN4
+dec[3] => Equal4.IN4
+dec[4] => Equal2.IN7
+dec[4] => Equal3.IN7
+dec[5] => Equal2.IN6
+dec[5] => Equal3.IN6
+dec[6] => Equal2.IN5
+dec[6] => Equal3.IN5
+dec[7] => Equal2.IN4
+dec[7] => Equal3.IN4
+
+
+|number|display1:three
+print[0] <= <VCC>
+print[1] <= inte[1].DB_MAX_OUTPUT_PORT_TYPE
+print[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+print[3] <= inte[0].DB_MAX_OUTPUT_PORT_TYPE
+print[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+print[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+print[6] <= <GND>
+print[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+inte[0] => Decoder0.IN1
+inte[0] => print[3].DATAIN
+inte[1] => Decoder0.IN0
+inte[1] => print[1].DATAIN
+
+
+|number|display1:two
+print[0] <= <VCC>
+print[1] <= inte[1].DB_MAX_OUTPUT_PORT_TYPE
+print[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+print[3] <= inte[0].DB_MAX_OUTPUT_PORT_TYPE
+print[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+print[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+print[6] <= <GND>
+print[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+inte[0] => Decoder0.IN1
+inte[0] => print[3].DATAIN
+inte[1] => Decoder0.IN0
+inte[1] => print[1].DATAIN
+
+

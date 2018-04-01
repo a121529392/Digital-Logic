@@ -1,0 +1,108 @@
+module clock_divider(clk,divide_clk);
+	input clk;
+	output divide_clk;
+	reg [25:0]num;
+	parameter divid =5000000;
+	reg divide_clk;
+	always@(posedge clk)
+	begin
+		if(num > divid)
+		begin
+			num <= 0;
+			divide_clk <= ~divide_clk;
+		end
+		else
+			num = num+1;
+	end
+endmodule 
+
+module ppcounter(divide_clk,rst,hold,count);
+	input divide_clk;
+	input rst;
+	input hold;
+	output count;
+	reg count;
+	reg n=0;
+	reg a;
+	initial
+	begin
+		count=0;
+	end
+	always@(posedge divide_clk)
+	begin
+	if(count==99)
+		 a<=-1;
+	if(count==0)
+		a<=1;
+	if(rst==0)
+		count=0;
+	if(hold==0)
+		
+		begin
+			count=count+a;
+		end
+	end	
+endmodule 
+
+module inte(ten,one,count);
+	input count;
+	output one;
+	output ten;
+	assign ten=count/10;
+	assign one=count%10;
+endmodule 
+
+module display(ten,one,seg_out,seg_out1);
+	input ten;
+	input one;
+	reg [7:0]seg_out;
+	reg [7:0]seg_out1;
+	output [7:0]seg_out;
+	output [7:0]seg_out1; 
+	always@(ten)
+		begin
+			case(ten)
+			1:seg_out=8'b10011111;
+			2:seg_out=8'b00100101;
+			3:seg_out=8'b00001101;
+			4:seg_out=8'b10011001;
+			5:seg_out=8'b01001001;
+			6:seg_out=8'b01000001;
+			7:seg_out=8'b00011111;
+			8:seg_out=8'b00000001;
+			9:seg_out=8'b00001001;
+			0:seg_out=8'b00000011;
+			endcase
+		end
+	always@(one)
+		begin
+			case(one)
+			1:seg_out1=8'b10011111;
+			2:seg_out1=8'b00100101;
+			3:seg_out1=8'b00001101;
+			4:seg_out1=8'b10011001;
+			5:seg_out1=8'b01001001;
+			6:seg_out1=8'b01000001;
+			7:seg_out1=8'b00011111;
+			8:seg_out1=8'b00000001;
+			9:seg_out1=8'b00001001;
+			0:seg_out1=8'b00000011;
+			endcase
+		end		
+endmodule 
+
+module exercise(rst,hold,clk,seg_out,seg_out1,count);
+	input rst;
+	input hold;
+	input clk;
+	output [7:0]seg_out;
+	output [7:0]seg_out1;
+	wire divide_clk;
+	output count;
+	wire one;
+	wire ten;
+	clock_divider mod(clk,divide_clk);
+	ppcounter mod1(divide_clk,rst,hold,count);
+	inte mod2(ten,one,count);
+	display mod3(ten,one,seg_out,seg_out1);
+endmodule 

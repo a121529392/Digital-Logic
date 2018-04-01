@@ -1,0 +1,86 @@
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Signal Activity File Name: "D:/s1031449full/s1031449fulladder.saf"
+# Created On: "03/02/2016 20:58:26"
+# Created By: "Version 9.1 Build 304 01/25/2010 Service Pack 1 SJ Web Edition"
+# This file was created by the Quartus(R) II Simulator with glitch filtering disabled.
+
+FORMAT_VERSION 1;
+
+DEFINE_FLAG TOGGLE_RATE_FROM_SIMULATION 0x1;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_SIMULATION 0x2;
+DEFINE_FLAG TOGGLE_RATE_FROM_USER 0x4;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_USER 0x8;
+DEFINE_FLAG TOGGLE_RATE_FROM_USER_DEFAULT 0x10;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_USER_DEFAULT 0x20;
+DEFINE_FLAG TOGGLE_RATE_FROM_VECTORLESS_ESTIMATION 0x40;
+DEFINE_FLAG STATIC_PROBABILITY_FROM_VECTORLESS_ESTIMATION 0x80;
+DEFINE_FLAG TOGGLE_RATE_ASSUMED_ZERO 0x100;
+DEFINE_FLAG TOGGLE_RATE_CLIPPED_TO_MAX 0x200;
+
+BEGIN_OUTPUT_SIGNAL_INFO;
+
+# Output Signal Information Line Format Description:
+
+# <one or more spaces><partial output signal name><spaces>[<flags mask><spaces><toggle rate><spaces><static probability>]<;>
+
+ a 0x3 3.99e+008 0.5;
+ a1 0x3 1.99e+008 0.5;
+ a2 0x3 1.33e+008 0.4975;
+ a3 0x3 9.9e+007 0.5;
+ b 0x3 3.99e+008 0.5;
+ b1 0x3 1.33e+008 0.4975;
+ b2 0x3 1.99e+008 0.5;
+ b3 0x3 9.9e+007 0.5;
+ c 0x3 9.9e+007 0.5;
+ c1 0x3 2.01e+008 0.4975;
+ c2 0x3 2.01e+008 0.4975;
+ c3 0x3 6.5e+007 0.0825;
+ d 0x3 1.99e+008 0.25;
+ d1 0x3 1.31e+008 0.165;
+ d2 0x3 6.5e+007 0.0825;
+ d3 0x3 6.5e+007 0.0825;
+ e 0x3 9.9e+007 0.5;
+ top:mod;
+  Add0~0 0x3 3.99e+008 0.5;
+  Cout 0x3 1.99e+008 0.25;
+  Cout~0 0x3 1.99e+008 0.25;
+  Sum 0x3 9.9e+007 0.5;
+  Sum~0 0x3 0 0;
+ top:mod1;
+  Add0~0 0x3 1.33e+008 0.4975;
+  Cout 0x3 1.31e+008 0.165;
+  Cout~0 0x3 1.31e+008 0.165;
+  Sum 0x3 2.01e+008 0.4975;
+  Sum~0 0x3 2e+008 0.4975;
+ top:mod2;
+  Add0~0 0x3 1.99e+008 0.5;
+  Cout 0x3 6.5e+007 0.0825;
+  Cout~0 0x3 6.5e+007 0.0825;
+  Sum 0x3 2.01e+008 0.4975;
+  Sum~0 0x3 2e+008 0.4975;
+ top:mod3;
+  Add0~0 0x3 9.9e+007 0.5;
+  Cout 0x3 6.5e+007 0.0825;
+  Cout~0 0x3 6.5e+007 0.0825;
+  Sum 0x3 6.5e+007 0.0825;
+  Sum~0 0x3 0 0;
+
+END_OUTPUT_SIGNAL_INFO;
+
+TOGGLE_PERCENTAGE 94.5946;
+
+PERCENTAGE_OF_TIME_SIGNALS_IN_UNKNOWN_STATE 0;
+

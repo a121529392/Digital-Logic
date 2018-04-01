@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="number">
+		<CBX_INST_ENTRY INSTANCE_NAME="|number|bin_to_dec1:w|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_agm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|number|bin_to_dec1:w|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_d8m.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

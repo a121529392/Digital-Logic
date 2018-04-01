@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue May 10 12:57:26 2016
+Quartus II 32-bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : exercise
+Top-level Entity Name : exercise
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 42 / 15,408 ( < 1 % )
+    Total combinational functions : 41 / 15,408 ( < 1 % )
+    Dedicated logic registers : 28 / 15,408 ( < 1 % )
+Total registers : 28
+Total pins : 20 / 347 ( 6 % )
+Total virtual pins : 0
+Total memory bits : 0 / 516,096 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 112 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

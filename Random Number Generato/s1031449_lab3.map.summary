@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Mar 09 21:08:16 2016
+Quartus II Version : 9.1 Build 304 01/25/2010 SP 1 SJ Web Edition
+Revision Name : s1031449_lab3
+Top-level Entity Name : s1031449_lab3
+Family : Cyclone III
+Total logic elements : 6
+    Total combinational functions : 1
+    Dedicated logic registers : 6
+Total registers : 6
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
